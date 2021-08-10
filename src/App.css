@@ -91,7 +91,7 @@ article {
 }
 
 .cut {
-  display: inline-block;
+
   text-align: center;
   text-overflow: hidden;
   overflow: hidden;
