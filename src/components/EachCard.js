@@ -29,11 +29,7 @@ const EachCard = ( {filteredItems} ) => {
           <span>
             {filteredItems.RQ_DIMENSIONS ? (
               <span className="cut">
-                Cut to:{" "}
-                {Math.ceil(
-                  (filteredItems.RQ_DIMENSIONS / 12) % filteredItems.RQ_CALC_QTY
-                )}{" "}
-                to {filteredItems.RQ_DIMENSIONS}"
+                Cut {filteredItems.RQ_DIMENSIONS}" Pieces
               </span>
             ) : (
               <span></span>
