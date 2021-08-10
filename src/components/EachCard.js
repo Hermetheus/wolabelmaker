@@ -54,7 +54,7 @@ const EachCard = ( {filteredItems} ) => {
           )}
         </span>
         <div className="image">
-          {!filteredItems.WO_BASE_ID.includes("H") ? (
+          {!filteredItems.WO_BASE_ID.startsWith("H") ? (
             <img className="logo" src={Door} alt="Door Engineering" />
           ) : (
             <img className="logo" src={Hercules} alt="Hercules" />
