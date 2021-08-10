@@ -53,7 +53,7 @@ function App() {
         } else {
           console.log(item);
           console.log(item.WO_SUB_ID);
-          return item.WO_SUB_ID.match(searchItems)
+          return item.WO_SUB_ID.match(searchItems) && item.WO_BASE_ID(searchItems)
         }
       })
     );
