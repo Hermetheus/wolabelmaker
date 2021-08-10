@@ -44,7 +44,7 @@ const EachCard = ( {filteredItems} ) => {
       <div className="bottomline">
         <div className="leg">
           <span className="">Leg #: {filteredItems.WO_SUB_ID}</span>
-          <span>Piece #: {filteredItems.RQ_PIECE_NO}</span>
+          <span>Piece #: {Math.round(filteredItems.RQ_PIECE_NO)}</span>
         </div>
         <span className="description" maxlength="35">
           {filteredItems["RQ_PART_DESCRIPTION.1"] ? (
